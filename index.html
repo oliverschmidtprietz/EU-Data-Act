@@ -1262,8 +1262,10 @@ body {
                 <span class="section-icon">§</span> 09 · README.MD
             </div>
             <div class="readme-content"><h1>EU Data Act Practitioner Skill — Deployment Guide</h1>
+<blockquote>
+<p>📄 <strong><a href="https://oliverschmidtprietz.github.io/EU-Data-Act/">View the interactive skill page →</a></strong></p>
+</blockquote>
 <p>See <a href="CHANGELOG.md">CHANGELOG.md</a> for version history.</p>
-<p><strong>Status: pre-review (v0.9).</strong> Foundation phases (architecture, source layer, method, gates, router) are complete. Scenario cards, templates, and eval loop are pending. Do not symlink into <code>~/.claude/skills/</code> for production use until v1.0 (post-eval) is released.</p>
 <h2>Overview</h2>
 <p>Practitioner-grade analysis and drafting on <strong>Regulation (EU) 2023/2854</strong> (the Data Act). Calibrated for senior legal counsel, compliance officers, and product counsel working with the Data Act in client-facing or in-house contexts.</p>
 <p>The skill's architectural anchor is <strong>role × chapter × stage</strong>. Every matter is positioned by identifying:</p>
@@ -1372,7 +1374,7 @@ body {
 │   │   ├── sectoral-lex-specialis.md     # Warn-only sectoral catalogue
 │   │   └── member-state.md               # Warn-only MS implementing law
 │   ├── gotchas.md                        # 20 numbered failure-mode entries
-│   └── scenarios/                        # (Phase 5 — pre-walked role × chapter × stage cards)
+│   └── scenarios/                        # Pre-walked role × chapter × stage cards
 ├── sources/
 │   ├── regulation-2023-2854.md           # Verbatim Data Act (119 recitals + 50 articles)
 │   ├── faq-v1-4.md                       # Commission FAQ v1.4 (22 Jan 2026, CC BY 4.0)
@@ -1383,17 +1385,16 @@ body {
 │   └── _manifest.sha256                  # Source checksums
 ├── scripts/
 │   └── validate_sources.py               # Source layer validator (20/20 checks)
-├── templates/                            # (Phase 6 — drafting templates)
-└── evals/                                # (Phase 7 — eval fixtures + grading)
+├── templates/                            # Drafting templates
+└── evals/                                # Eval fixtures + grading
 </code></pre>
 <h2>Deployment</h2>
-<h3>Claude Code (recommended once reviewed)</h3>
-<p>Symlink the skill folder into <code>~/.claude/skills/</code> once it reaches v1.0:</p>
+<h3>Claude Code (recommended)</h3>
+<p>Symlink the skill folder into <code>~/.claude/skills/</code>:</p>
 <pre><code class="language-bash">ln -s ~/CLAUDE_PROJECTS/SKILLS/claude-skills/skills/eu-data-act ~/.claude/skills/eu-data-act
 </code></pre>
-<p>Do not symlink the pre-review v0.9 build into production. Use a sandbox or local copy if you want to exercise the foundation work before v1.0 ships.</p>
 <h3>Claude.ai (User Skills)</h3>
-<p>Upload the entire <code>eu-data-act/</code> folder structure under Settings → Profile → Custom Skills once v1.0 ships.</p>
+<p>Upload the entire <code>eu-data-act/</code> folder structure under Settings → Profile → Custom Skills.</p>
 <h2>Trigger phrases</h2>
 <ul>
 <li>"Data Act" / "Datengesetz" / "Regulation (EU) 2023/2854"</li>

@@ -1,8 +1,8 @@
 # EU Data Act Practitioner Skill — Deployment Guide
 
-See [CHANGELOG.md](CHANGELOG.md) for version history.
+> 📄 **[View the interactive skill page →](https://oliverschmidtprietz.github.io/EU-Data-Act/)**
 
-**Status: pre-review (v0.9).** Foundation phases (architecture, source layer, method, gates, router) are complete. Scenario cards, templates, and eval loop are pending. Do not symlink into `~/.claude/skills/` for production use until v1.0 (post-eval) is released.
+See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## Overview
 
@@ -55,7 +55,7 @@ eu-data-act/
 │   │   ├── sectoral-lex-specialis.md     # Warn-only sectoral catalogue
 │   │   └── member-state.md               # Warn-only MS implementing law
 │   ├── gotchas.md                        # 20 numbered failure-mode entries
-│   └── scenarios/                        # (Phase 5 — pre-walked role × chapter × stage cards)
+│   └── scenarios/                        # Pre-walked role × chapter × stage cards
 ├── sources/
 │   ├── regulation-2023-2854.md           # Verbatim Data Act (119 recitals + 50 articles)
 │   ├── faq-v1-4.md                       # Commission FAQ v1.4 (22 Jan 2026, CC BY 4.0)
@@ -66,25 +66,23 @@ eu-data-act/
 │   └── _manifest.sha256                  # Source checksums
 ├── scripts/
 │   └── validate_sources.py               # Source layer validator (20/20 checks)
-├── templates/                            # (Phase 6 — drafting templates)
-└── evals/                                # (Phase 7 — eval fixtures + grading)
+├── templates/                            # Drafting templates
+└── evals/                                # Eval fixtures + grading
 ```
 
 ## Deployment
 
-### Claude Code (recommended once reviewed)
+### Claude Code (recommended)
 
-Symlink the skill folder into `~/.claude/skills/` once it reaches v1.0:
+Symlink the skill folder into `~/.claude/skills/`:
 
 ```bash
 ln -s ~/CLAUDE_PROJECTS/SKILLS/claude-skills/skills/eu-data-act ~/.claude/skills/eu-data-act
 ```
 
-Do not symlink the pre-review v0.9 build into production. Use a sandbox or local copy if you want to exercise the foundation work before v1.0 ships.
-
 ### Claude.ai (User Skills)
 
-Upload the entire `eu-data-act/` folder structure under Settings → Profile → Custom Skills once v1.0 ships.
+Upload the entire `eu-data-act/` folder structure under Settings → Profile → Custom Skills.
 
 ## Trigger phrases
 
