@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA ACT — onezero.legal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --bg: #F5F0E8;
+    --bg-alt: #EDE8DF;
+    --ink: #1A1A1A;
+    --ink-light: #4A4A4A;
+    --ink-muted: #8A8A7A;
+    --green: #00E676;
+    --green-dark: #00C853;
+    --pink: #FF4081;
+    --mint-hl: #B8F0D0;
+    --pink-hl: #FF80AB;
+    --blue-hl: #BFD9F5;
+    --border-w: 2.5px;
+    --skill-color: #D4E4B4;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* ── NAV ─────────────────────────────── */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+    border-bottom: var(--border-w) solid var(--ink);
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.nav-section-icon {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.6rem;
+    background: var(--pink);
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.nav-brand {
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.nav-brand a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-brand a:hover { color: var(--pink); }
+
+.nav-divider {
+    color: var(--ink-muted);
+    font-size: 0.85rem;
+}
+
+.nav-skill {
+    font-size: 0.75rem;
+    background: var(--skill-color);
+    border: 1.5px solid var(--ink);
+    padding: 0.2rem 0.6rem;
+    letter-spacing: 0.04em;
+}
+
+.nav-version {
+    font-size: 0.72rem;
+    border: 1.5px solid var(--ink);
+    padding: 0.15rem 0.5rem;
+    letter-spacing: 0.04em;
+}
+
+.nav-spacer { flex: 1; }
+
+.nav-back {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border: 1.5px solid var(--ink);
+}
+
+.nav-back:hover { background: var(--ink); color: var(--bg); }
+
+/* ── HERO ────────────────────────────── */
+.hero {
+    padding: 3.5rem 1.5rem 3rem;
+    max-width: 1000px;
+}
+
+.badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 3rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.45rem 0.9rem;
+    width: fit-content;
+    border: 1.5px solid var(--ink);
+}
+
+.badge--live { background: var(--pink); color: white; border-color: var(--pink); }
+.badge--live::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 6px var(--green);
+}
+
+.badge--color { background: var(--skill-color); }
+
+.hero h1 {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: clamp(2.8rem, 9vw, 5.2rem);
+    line-height: 0.95;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    margin-bottom: 2.5rem;
+}
+
+.hero h1 em {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.hero h1 .hl-accent {
+    background: var(--skill-color);
+    padding: 0 0.15em;
+}
+
+.hero-sub {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 640px;
+}
+
+.hero-sub .hl {
+    background: var(--blue-hl);
+    padding: 0.05em 0.25em;
+}
+
+/* ── MARQUEE ─────────────────────────── */
+.marquee-wrap {
+    background: var(--ink);
+    overflow: hidden;
+    padding: 0.9rem 0;
+    border-top: var(--border-w) solid var(--ink);
+    border-bottom: var(--border-w) solid var(--ink);
+}
+
+.marquee-track {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee-scroll 50s linear infinite;
+}
+
+.marquee-text {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+    padding-right: 2rem;
+}
+
+@keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ── SECTION ─────────────────────────── */
+.section {
+    padding: 4rem 1.5rem 1rem;
+    max-width: 1000px;
+}
+
+.section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-label .section-icon {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1rem;
+    color: var(--ink);
+}
+
+.section h2 {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: clamp(1.8rem, 6vw, 3.2rem);
+    line-height: 1.02;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+}
+
+.section h2 em {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+.section-intro {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    max-width: 620px;
+    color: var(--ink-light);
+    margin-bottom: 3rem;
+}
+
+/* ── FEATURE CARDS ───────────────────── */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.2rem;
+    padding: 0 1.5rem 4rem;
+    max-width: 1000px;
+}
+
+.feature-card {
+    border: var(--border-w) solid var(--ink);
+    padding: 1.5rem;
+    transition: transform 0.15s ease;
+}
+
+.feature-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px 0 var(--ink);
+}
+
+.feature-number {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+}
+
+.feature-name {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.8rem;
+}
+
+.feature-desc {
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: var(--ink-light);
+}
+
+/* ── WORKFLOW ────────────────────────── */
+.workflow-list {
+    padding: 0 1.5rem 4rem;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.workflow-step {
+    border: var(--border-w) solid var(--ink);
+    background: var(--bg);
+    padding: 1rem 1.4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.4rem;
+    align-items: start;
+    transition: background 0.15s;
+}
+
+.workflow-step:hover { background: var(--skill-color); }
+
+.workflow-step-num {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 1;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--skill-color);
+    border: 2px solid var(--ink);
+    flex-shrink: 0;
+}
+
+.workflow-step-body { padding-top: 0.15rem; }
+
+.workflow-step-title {
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.3rem;
+}
+
+.workflow-step-desc {
+    font-size: 0.78rem;
+    line-height: 1.6;
+    color: var(--ink-light);
+}
+
+.workflow-step-desc .hl {
+    background: var(--blue-hl);
+    padding: 0.05em 0.25em;
+}
+
+/* ── MODES ───────────────────────────── */
+.modes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+    padding: 0 1.5rem 4rem;
+    max-width: 1000px;
+}
+
+.mode-card {
+    border: var(--border-w) solid var(--ink);
+    padding: 1.5rem;
+}
+
+.mode-name {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.01em;
+}
+
+.mode-desc {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--ink-light);
+}
+
+/* ── FOLDER TREE ─────────────────────── */
+.tree-wrap {
+    padding: 0 1.5rem 4rem;
+    max-width: 1000px;
+}
+
+.tree-card {
+    border: var(--border-w) solid var(--ink);
+    background: var(--ink);
+    color: #E0E0E0;
+    padding: 1.8rem 2rem;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    overflow-x: auto;
+}
+
+.tree-card pre {
+    font-family: 'JetBrains Mono', monospace;
+    color: #E0E0E0;
+    white-space: pre;
+}
+
+.tree-card .comment { color: #00E676; }
+
+/* ── DEPLOYMENT ──────────────────────── */
+.deployment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 0 1.5rem 4rem;
+    max-width: 1000px;
+}
+
+.deploy-card {
+    border: var(--border-w) solid var(--ink);
+    background: var(--bg);
+    padding: 1.8rem;
+}
+
+.deploy-card h3 {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.deploy-card ol {
+    padding-left: 1.2rem;
+    font-size: 0.82rem;
+    line-height: 1.8;
+    color: var(--ink-light);
+}
+
+.deploy-card code {
+    background: var(--ink);
+    color: var(--green);
+    padding: 0.05em 0.4em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+}
+
+.deploy-card pre {
+    background: var(--ink);
+    color: var(--green);
+    padding: 0.8rem 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    margin-top: 0.8rem;
+    overflow-x: auto;
+}
+
+/* ── OUTPUTS LIST ────────────────────── */
+.outputs-list {
+    padding: 0 1.5rem 4rem;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.output-row {
+    border: var(--border-w) solid var(--ink);
+    background: var(--bg);
+    padding: 1.2rem 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.4rem;
+    align-items: center;
+}
+
+.output-name {
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.output-desc {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--ink-light);
+}
+
+/* ── EVALS ───────────────────────────── */
+.evals-section {
+    padding: 0 1.5rem 4rem;
+    max-width: 1000px;
+}
+
+.evals-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    border: var(--border-w) solid var(--ink);
+    background: var(--skill-color);
+    padding: 1.4rem 1.5rem;
+}
+
+.stat-value {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+}
+
+.stat-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-light);
+}
+
+.eval-topics {
+    border: var(--border-w) solid var(--ink);
+    background: var(--bg);
+}
+
+.eval-row {
+    padding: 1rem 1.5rem;
+    border-bottom: 1.5px solid var(--ink);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1.2rem;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.eval-row:last-child { border-bottom: none; }
+
+.eval-id {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 0.95rem;
+    width: 2.5rem;
+}
+
+.eval-asserts {
+    font-size: 0.72rem;
+    font-weight: 700;
+    background: var(--ink);
+    color: var(--bg);
+    padding: 0.2rem 0.5rem;
+    letter-spacing: 0.06em;
+}
+
+/* ── REGULATORY TABLE ────────────────── */
+.reg-table {
+    padding: 0 1.5rem 4rem;
+    max-width: 1000px;
+}
+
+.reg-grid {
+    border: var(--border-w) solid var(--ink);
+    background: var(--bg);
+}
+
+.reg-row {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1.5px solid var(--ink);
+    font-size: 0.85rem;
+}
+
+.reg-row:last-child { border-bottom: none; }
+
+.reg-doc { font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; }
+.reg-ref { color: var(--ink-light); }
+
+/* ── TRUST SECTION ───────────────────── */
+.trust-section {
+    padding: 4rem 1.5rem;
+    max-width: 1000px;
+}
+
+.trust-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.trust-card {
+    border: var(--border-w) solid var(--ink);
+    background: var(--bg);
+    padding: 1.4rem 1.6rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1.2rem;
+    align-items: start;
+}
+
+.trust-icon {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-top: 0.1rem;
+}
+
+.trust-title { font-weight: 700; font-size: 0.85rem; margin-bottom: 0.25rem; }
+.trust-desc { font-size: 0.78rem; line-height: 1.6; color: var(--ink-light); }
+
+.trust-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: var(--bg);
+    padding: 0.25rem 0.55rem;
+    align-self: end;
+    white-space: nowrap;
+}
+
+/* ── README BLOCK ────────────────────── */
+.readme-section {
+    background: var(--bg-alt);
+    border-top: var(--border-w) solid var(--ink);
+    padding: 4rem 1.5rem;
+}
+
+.readme-inner {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.readme-content {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    color: var(--ink);
+}
+
+.readme-content h1 {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem;
+    line-height: 1.05;
+}
+
+.readme-content h2 {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 2.5rem 0 1rem;
+    line-height: 1.1;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 0.3rem;
+}
+
+.readme-content h3 {
+    font-family: 'Archivo', sans-serif; font-weight: 800;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    margin: 1.8rem 0 0.8rem;
+}
+
+.readme-content p { margin-bottom: 1rem; }
+
+.readme-content ul, .readme-content ol {
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+.readme-content li { margin-bottom: 0.4rem; }
+
+.readme-content strong { font-weight: 700; }
+
+.readme-content code {
+    background: var(--ink);
+    color: var(--green);
+    padding: 0.08em 0.4em;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85em;
+}
+
+.readme-content pre {
+    background: var(--ink);
+    color: #E0E0E0;
+    padding: 1.2rem 1.4rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    line-height: 1.6;
+}
+
+.readme-content pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+.readme-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.82rem;
+    border: 2px solid var(--ink);
+}
+
+.readme-content thead {
+    background: var(--ink);
+    color: var(--bg);
+}
+
+.readme-content th, .readme-content td {
+    padding: 0.6rem 0.9rem;
+    text-align: left;
+    border: 1px solid var(--ink);
+}
+
+.readme-content th {
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+}
+
+.readme-content a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+.readme-content blockquote {
+    border-left: 4px solid var(--ink);
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: var(--ink-light);
+    font-style: italic;
+}
+
+.readme-content hr {
+    border: none;
+    border-top: 2px solid var(--ink);
+    margin: 2rem 0;
+}
+
+/* ── FOOTER ──────────────────────────── */
+.page-footer {
+    border-top: var(--border-w) solid var(--ink);
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-text {
+    font-size: 0.72rem;
+    color: var(--ink-muted);
+    letter-spacing: 0.04em;
+}
+
+.footer-links { display: flex; gap: 1.5rem; }
+
+.footer-links a {
+    font-size: 0.72rem;
+    color: var(--ink-muted);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.footer-links a:hover { color: var(--ink); }
+
+/* ── RESPONSIVE ──────────────────────── */
+@media (max-width: 720px) {
+    .features-grid, .modes-grid { grid-template-columns: 1fr; }
+    .deployment-grid { grid-template-columns: 1fr; }
+    .output-row { grid-template-columns: 1fr; gap: 0.4rem; }
+    .reg-row { grid-template-columns: 1fr; gap: 0.3rem; }
+    .trust-card { grid-template-columns: 1fr; gap: 0.6rem; }
+    .trust-badge { width: fit-content; }
+    .nav { padding: 0.7rem 1rem; flex-wrap: wrap; }
+    .nav-skill { display: none; }
+    .nav-back { font-size: 0.65rem; padding: 0.3rem 0.6rem; }
+    .hero, .section, .trust-section { padding-left: 1rem; padding-right: 1rem; }
+    .features-grid, .workflow-list, .modes-grid, .tree-wrap, .deployment-grid, .outputs-list, .evals-section, .reg-table {
+        padding-left: 1rem; padding-right: 1rem;
+    }
+}
+</style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav-section-icon">§</div>
+        <span class="nav-brand"><a href="https://onezero.legal">onezero.legal</a></span>
+        <span class="nav-divider">/</span>
+        <span class="nav-skill">/SKILLS/DATA.ACT</span>
+        <div class="nav-spacer"></div>
+        <a href="https://onezero.legal" class="nav-back">← PORTFOLIO</a>
+    </nav>
+
+    <section class="hero">
+        <div class="badges">
+            <div class="badge badge--live">LIVE · v1.3 STABLE</div>
+            <div class="badge">BUILD 2026.05.27</div>
+            <div class="badge badge--color">REG. 2023/2854</div>
+            <div class="badge">AGPL-3.0 · 8 EVAL CASES · 0 ASSERTIONS</div>
+        </div>
+
+        <h1>DATA ACT<br>ANALYSIS<br><em>by</em> <span class="hl-accent">ROLE</span><br>× CHAPTER.</h1>
+
+        <p class="hero-sub">Practitioner-grade analysis and drafting on Regulation (EU) 2023/2854. Positions every matter on a <span class="hl">role × chapter × stage</span> anchor, then runs a <span class="hl">seven-step cognitive method</span> with gate checks for <span class="hl">GDPR overlay</span>, <span class="hl">trade secrets</span>, <span class="hl">DMA gatekeeper exclusion</span>, and <span class="hl">sectoral lex specialis</span> — for output the lawyer adopts with minimal edit.</p>
+    </section>
+
+    <div class="marquee-wrap">
+        <div class="marquee-track">
+            <span class="marquee-text">REG. 2023/2854 &nbsp; · &nbsp; CHAPTERS II-VIII &nbsp; · &nbsp; ART. 4(1) &nbsp; · &nbsp; ART. 5(1) &nbsp; · &nbsp; ART. 13 UNFAIR TERMS &nbsp; · &nbsp; ART. 25 SWITCHING &nbsp; · &nbsp; ART. 32 THIRD-COUNTRY &nbsp; · &nbsp; TSD 2016/943 &nbsp; · &nbsp; GDPR 2016/679 &nbsp; · &nbsp; DMA 2022/1925 &nbsp; · &nbsp; ePRIVACY 2002/58/EC &nbsp; · &nbsp; COM(2025) 833 FINAL &nbsp; · &nbsp; REG. 2023/2854 &nbsp; · &nbsp; CHAPTERS II-VIII &nbsp; · &nbsp; ART. 4(1) &nbsp; · &nbsp; ART. 5(1) &nbsp; · &nbsp; ART. 13 UNFAIR TERMS &nbsp; · &nbsp; ART. 25 SWITCHING &nbsp; · &nbsp; ART. 32 THIRD-COUNTRY &nbsp; · &nbsp; TSD 2016/943 &nbsp; · &nbsp; GDPR 2016/679 &nbsp; · &nbsp; DMA 2022/1925 &nbsp; · &nbsp; ePRIVACY 2002/58/EC &nbsp; · &nbsp; COM(2025) 833 FINAL</span>
+        </div>
+    </div>
+
+    <section class="section" id="features">
+        <div class="section-label"><span class="section-icon">§</span> 01 · CAPABILITIES</div>
+        <h2>SIX PRIMITIVES.<br><em>One</em> SKILL.</h2>
+        <p class="section-intro">
+            Each capability is documented separately, tested separately, and called by
+            the workflow at the right moment. Compose them or invoke individually.
+        </p>
+    </section>
+
+    <div class="features-grid">
+        <div class="feature-card" style="background-color: #C8F0DC;">
+            <div class="feature-number">01</div>
+            <div class="feature-name">ROLE × CHAPTER × STAGE</div>
+            <div class="feature-desc">Positions every matter on the anchor: which Data Act roles the parties play, which chapter (II-VIII) governs, which stage the matter is at. The anchor determines which references and templates load.</div>
+        </div>
+        <div class="feature-card" style="background-color: #FFE0A0;">
+            <div class="feature-number">02</div>
+            <div class="feature-name">SEVEN-STEP METHOD</div>
+            <div class="feature-desc">A seven-step cognitive flow applied to every substantive matter. Role mapping is the most consequential step; output that hides the mapping is treated as unreliable.</div>
+        </div>
+        <div class="feature-card" style="background-color: #D8C8F0;">
+            <div class="feature-number">03</div>
+            <div class="feature-name">CROSS-REGIME GATES</div>
+            <div class="feature-desc">Five gates: GDPR/ePrivacy overlay, Trade Secrets Directive, DMA gatekeeper exclusion, sectoral lex specialis (warn-only), and Member State implementing law (warn-only).</div>
+        </div>
+        <div class="feature-card" style="background-color: #C0DCF4;">
+            <div class="feature-number">04</div>
+            <div class="feature-name">VERBATIM SOURCING</div>
+            <div class="feature-desc">Quotes the Data Act and Commission FAQ from local source files in Art. N(M) / Recital N notation. Never paraphrases the regulation from training data.</div>
+        </div>
+        <div class="feature-card" style="background-color: #FFD0B8;">
+            <div class="feature-number">05</div>
+            <div class="feature-name">SCENARIO ROUTING</div>
+            <div class="feature-desc">24 pre-walked scenario cards mapped to common role × chapter × stage anchors. Cards are accelerators, not gatekeepers; unmapped prompts fall back to the seven-step method.</div>
+        </div>
+        <div class="feature-card" style="background-color: #B0E0D4;">
+            <div class="feature-number">06</div>
+            <div class="feature-name">OMNIBUS DISCIPLINE</div>
+            <div class="feature-desc">States current law first, then flags the Digital Omnibus proposal (COM(2025) 833 final) where it affects Arts. 4(8), 5(11), 15, 25, 31, with status: co-legislator negotiation, not adopted.</div>
+        </div>
+    </div>
+
+    <section class="section" id="workflow">
+        <div class="section-label"><span class="section-icon">§</span> 02 · WORKFLOW</div>
+        <h2>FROM INPUT<br><em>to</em> ARTEFACT.</h2>
+        <p class="section-intro">
+            Nine structured steps. The human stays accountable; the skill carries the
+            structure, the citations, and the document trail.
+        </p>
+    </section>
+
+    <div class="workflow-list">
+        <div class="workflow-step">
+            <div class="workflow-step-num">01</div>
+            <div class="workflow-step-body">
+                <div class="workflow-step-title">Infer the anchor</div>
+                <div class="workflow-step-desc">Read the prompt for chapter (topic), stage (verb), and any named roles. Ask only for unresolved fields that change the analysis — one question at a time, not checklists.</div>
+            </div>
+        </div>
+        <div class="workflow-step">
+            <div class="workflow-step-num">02</div>
+            <div class="workflow-step-body">
+                <div class="workflow-step-title">Load method and house-style</div>
+                <div class="workflow-step-desc">Read analysis-method.md (seven-step flow) and house-style.md (citation and output conventions) before any substantive work.</div>
+            </div>
+        </div>
+        <div class="workflow-step">
+            <div class="workflow-step-num">03</div>
+            <div class="workflow-step-body">
+                <div class="workflow-step-title">Map the roles</div>
+                <div class="workflow-step-desc">For every entity, identify Data Act role(s) and any concurrent GDPR role(s). Roles can be concurrent and can shift across phases. The mapping is made explicit in the output.</div>
+            </div>
+        </div>
+        <div class="workflow-step">
+            <div class="workflow-step-num">04</div>
+            <div class="workflow-step-body">
+                <div class="workflow-step-title">Fix chapter and stage</div>
+                <div class="workflow-step-desc">Identify which chapter(s) govern (II-VIII). Cross-chapter matters get separate analyses per chapter, not blended. Pin the stage: design, request, response, refusal, enforcement.</div>
+            </div>
+        </div>
+        <div class="workflow-step">
+            <div class="workflow-step-num">05</div>
+            <div class="workflow-step-body">
+                <div class="workflow-step-title">Run the gates</div>
+                <div class="workflow-step-desc">Fire GDPR overlay, Trade Secrets Directive, DMA gatekeeper, sectoral lex specialis, and Member State gates as the facts trigger them. State each result in the output, not a footnote.</div>
+            </div>
+        </div>
+        <div class="workflow-step">
+            <div class="workflow-step-num">06</div>
+            <div class="workflow-step-body">
+                <div class="workflow-step-title">Apply the test, limb by limb</div>
+                <div class="workflow-step-desc">Work multi-limb tests one limb at a time. For Art. 4(8)/5(11) refusal, the serious AND irreparable damage conjunction must be shown — trade-secret status alone is refused.</div>
+            </div>
+        </div>
+        <div class="workflow-step">
+            <div class="workflow-step-num">07</div>
+            <div class="workflow-step-body">
+                <div class="workflow-step-title">State temporal applicability</div>
+                <div class="workflow-step-desc">Anchor the answer to contract-conclusion and product-placement dates where applicability turns on them. Flag the Digital Omnibus on any affected provision.</div>
+            </div>
+        </div>
+        <div class="workflow-step">
+            <div class="workflow-step-num">08</div>
+            <div class="workflow-step-body">
+                <div class="workflow-step-title">Lead with the answer</div>
+                <div class="workflow-step-desc">No preamble, no restating the prompt. Practitioner voice: no em dashes, no Furthermore/Moreover, no CYA padding.</div>
+            </div>
+        </div>
+        <div class="workflow-step">
+            <div class="workflow-step-num">09</div>
+            <div class="workflow-step-body">
+                <div class="workflow-step-title">Lint before delivery</div>
+                <div class="workflow-step-desc">Run check_house_style.py against the generated deliverable (path argument required). Fix every finding before the output ships.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="section" id="tree">
+        <div class="section-label"><span class="section-icon">§</span> 03 · ANATOMY</div>
+        <h2>WHAT'S<br>IN <em>the</em> SKILL.</h2>
+        <p class="section-intro">
+            Single-folder skill. SKILL.md is the runtime spec; references hold the
+            knowledge corpus; evals hold the proof.
+        </p>
+    </section>
+
+    <div class="tree-wrap">
+        <div class="tree-card">
+            <pre>eu-data-act/
+├── evals  <span class="comment"># Test cases + assertions</span>
+│   ├── evals.json  <span class="comment"># 8 cases, 0 assertions</span>
+│   └── grading.md
+├── references  <span class="comment"># Reference corpus</span>
+│   ├── gates
+│   │   ├── dma-gatekeeper.md
+│   │   ├── gdpr-overlay.md
+│   │   ├── member-state.md
+│   │   ├── sectoral-lex-specialis.md
+│   │   └── trade-secrets-directive.md
+│   ├── method
+│   │   ├── analysis-method.md
+│   │   └── house-style.md
+│   ├── scenarios
+│   │   ├── ch2-data-holder-response.md
+│   │   ├── ch2-pre-contract-transparency.md
+│   │   ├── ch2-safety-security-handbrake.md
+│   │   ├── ch2-third-party-permitted-use.md
+│   │   ├── ch2-trade-secret-stage-3-refusal.md
+│   │   ├── ch2-trade-secret-stages-1-2.md
+│   │   ├── ch2-user-direct-request.md
+│   │   ├── ch2-user-third-party-request.md
+│   │   ├── ch3-compensation-challenge.md
+│   │   ├── ch3-frand-terms.md
+│   │   ├── ch4-contract-drafting.md
+│   │   ├── ch4-unfairness-challenge.md
+│   │   ├── ch5-cross-border-cooperation.md
+│   │   ├── ch5-decline-or-modify.md
+│   │   ├── ch5-request-preparation.md
+│   │   ├── ch6-charges.md
+│   │   ├── ch6-custom-built-carve-out.md
+│   │   ├── ch6-customer-contract-review.md
+│   │   ├── ch6-provider-compliance.md
+│   │   ├── ch6-switching-execution.md
+│   │   ├── ch7-third-country-request.md
+│   │   ├── cross-gap-analysis.md
+│   │   ├── cross-gdpr-boundary.md
+│   │   └── cross-omnibus-impact.md
+│   └── gotchas.md
+├── scripts
+│   ├── check_house_style.py
+│   └── validate_sources.py
+├── sources
+│   ├── _archive
+│   ├── _manifest.sha256
+│   ├── _versions.json
+│   ├── digital-omnibus-amendments-tracker.md
+│   ├── faq-v1-4.md
+│   ├── mcts-sccs-recommendation-pointer.md
+│   ├── regulation-2023-2854.md
+│   └── vehicle-data-guidance-pointer.md
+├── styles
+├── templates
+│   ├── _drafter-notes
+│   │   ├── art13-unfairness-challenge.md
+│   │   ├── art17-public-sector-request.md
+│   │   ├── art18-decline-letter.md
+│   │   ├── art25-customer-side-clauses.md
+│   │   ├── art31-custom-built-assessment.md
+│   │   ├── art32-third-country-assessment.md
+│   │   ├── art4-1-data-holder-response.md
+│   │   ├── art4-1-user-request.md
+│   │   ├── art4-2-safety-handbrake-notice.md
+│   │   ├── art4-6-trade-secret-safeguards-agreement.md
+│   │   ├── art4-7-withholding-notice.md
+│   │   ├── art4-8-refusal-letter.md
+│   │   ├── art5-1-third-party-request.md
+│   │   ├── art6-third-party-recipient-contract.md
+│   │   └── art9-compensation-statement.md
+│   ├── art13-unfairness-challenge.md
+│   ├── art17-public-sector-request.md
+│   ├── art18-decline-letter.md
+│   ├── art25-customer-side-clauses.md
+│   ├── art31-custom-built-assessment.md
+│   ├── art32-third-country-assessment.md
+│   ├── art4-1-data-holder-response.md
+│   ├── art4-1-user-request.md
+│   ├── art4-2-safety-handbrake-notice.md
+│   ├── art4-6-trade-secret-safeguards-agreement.md
+│   ├── art4-7-withholding-notice.md
+│   ├── art4-8-refusal-letter.md
+│   ├── art5-1-third-party-request.md
+│   ├── art6-third-party-recipient-contract.md
+│   └── art9-compensation-statement.md
+├── CHANGELOG.md  <span class="comment"># Version history</span>
+├── README.md  <span class="comment"># Deployment guide</span>
+└── SKILL.md  <span class="comment"># Main skill instructions</span></pre>
+        </div>
+    </div>
+
+    <section class="section" id="deploy">
+        <div class="section-label"><span class="section-icon">§</span> 04 · DEPLOYMENT</div>
+        <h2>INSTALL<br><em>and</em> INVOKE.</h2>
+        <p class="section-intro">
+            Two deployment surfaces. The skill auto-triggers on relevant keywords once
+            installed.
+        </p>
+    </section>
+
+    <div class="deployment-grid">
+        <div class="deploy-card" style="background-color: #D4E4B4;">
+            <h3>CLAUDE.AI USER SKILLS</h3>
+            <ol>
+                <li>Settings → Profile → Custom Skills</li>
+                <li>Upload the entire <code>eu-data-act/</code> folder</li>
+                <li>Skill auto-triggers on relevant keywords</li>
+            </ol>
+        </div>
+        <div class="deploy-card">
+            <h3>CLAUDE CODE / MCP</h3>
+            <ol>
+                <li>Copy folder to your skills directory:</li>
+            </ol>
+            <pre>cp -r eu-data-act/ \
+   ~/.claude/skills/user/</pre>
+        </div>
+    </div>
+
+    <section class="section" id="outputs">
+        <div class="section-label"><span class="section-icon">§</span> 05 · OUTPUTS</div>
+        <h2>WHAT YOU<br><em>get</em> BACK.</h2>
+        <p class="section-intro">
+            Every output is documented, version-pinned, and traceable to its source citation.
+        </p>
+    </section>
+
+    <div class="outputs-list">
+        <div class="output-row">
+            <div class="output-name">Practitioner memo</div>
+            <div class="output-desc">Role mapping by phase, chapter and stage fixed, gate results stated inline, multi-limb tests applied one limb at a time, assumptions flagged.</div>
+        </div>
+        <div class="output-row">
+            <div class="output-name">Data Act notice or letter</div>
+            <div class="output-desc">Drafting from 15 templates routed by scenario card. The Art. 4(8) refusal letter uses the eight-step TSD-gate structure with irreparability standing alone.</div>
+        </div>
+        <div class="output-row">
+            <div class="output-name">Contract review</div>
+            <div class="output-desc">Data-sharing, FRAND (Ch III), unfair-term (Art. 13), or cloud-switching (Art. 25) contract reviewed against the mandatory terms and three-test structures.</div>
+        </div>
+        <div class="output-row">
+            <div class="output-name">Gap analysis</div>
+            <div class="output-desc">Multi-chapter compliance review across the governing chapters, with the GDPR/Data-Act boundary allocated (Case A/B) and Omnibus impact flagged.</div>
+        </div>
+        <div class="output-row">
+            <div class="output-name">Refusal with redirect</div>
+            <div class="output-desc">Where the analysis as posed would be wrong (weak Art. 4(8) facts, sectoral specifics, unverified MS law), the skill explains why and states what to do instead.</div>
+        </div>
+    </div>
+
+    <section class="section" id="evals">
+        <div class="section-label"><span class="section-icon">§</span> 06 · EVALS</div>
+        <h2>TESTED<br><em>before</em> SHIPPED.</h2>
+        <p class="section-intro">
+            Every release runs against a fixed test suite. Assertions check numeric
+            consistency, citation accuracy, and decision-tree branches.
+        </p>
+    </section>
+
+    <div class="evals-section">
+        <div class="evals-stats">
+            <div class="stat-card">
+                <div class="stat-value">08</div>
+                <div class="stat-label">Test Cases</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Assertions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Coverage Required</div>
+            </div>
+        </div>
+        <div class="eval-topics">
+            <div class="eval-row">
+                <div class="eval-id">00</div>
+                <div>I&#x27;m general counsel at a German automotive Tier-1 supplier (mid-cap, c</div>
+                <div class="eval-asserts">0 ASSERTS</div>
+            </div>
+            <div class="eval-row">
+                <div class="eval-id">01</div>
+                <div>I&#x27;m legal counsel at an Italian automotive aftermarket diagnostics company</div>
+                <div class="eval-asserts">0 ASSERTS</div>
+            </div>
+            <div class="eval-row">
+                <div class="eval-id">02</div>
+                <div>I&#x27;m in-house counsel at a German Mittelstand engineering firm</div>
+                <div class="eval-asserts">0 ASSERTS</div>
+            </div>
+            <div class="eval-row">
+                <div class="eval-id">03</div>
+                <div>I&#x27;m legal counsel at a German SaaS vendor (40 employees, EUR 7m ARR)</div>
+                <div class="eval-asserts">0 ASSERTS</div>
+            </div>
+            <div class="eval-row">
+                <div class="eval-id">04</div>
+                <div>I&#x27;m in-house counsel at a large EU-based industrial enterprise (c</div>
+                <div class="eval-asserts">0 ASSERTS</div>
+            </div>
+            <div class="eval-row">
+                <div class="eval-id">05</div>
+                <div>I&#x27;m in-house counsel at a logistics company</div>
+                <div class="eval-asserts">0 ASSERTS</div>
+            </div>
+            <div class="eval-row">
+                <div class="eval-id">06</div>
+                <div>I&#x27;m legal counsel at a large EU logistics group</div>
+                <div class="eval-asserts">0 ASSERTS</div>
+            </div>
+            <div class="eval-row">
+                <div class="eval-id">07</div>
+                <div>I&#x27;m general counsel at an EU-headquartered cloud provider</div>
+                <div class="eval-asserts">0 ASSERTS</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section" id="regulatory">
+        <div class="section-label"><span class="section-icon">§</span> 07 · REGULATORY BASIS</div>
+        <h2>WHAT IT<br><em>cites.</em></h2>
+        <p class="section-intro">
+            Every legal verdict resolves to one of these instruments. No invented
+            articles, no synthetic recitals.
+        </p>
+    </section>
+
+    <div class="reg-table">
+        <div class="reg-grid">
+            <div class="reg-row">
+                <div class="reg-doc">EU Data Act</div>
+                <div class="reg-ref">Regulation (EU) 2023/2854 — 119 recitals, 50 articles, Chapters II-VIII.</div>
+            </div>
+            <div class="reg-row">
+                <div class="reg-doc">Commission FAQ on the Data Act</div>
+                <div class="reg-ref">v1.4 (22 January 2026), CC BY 4.0 — framed as Commission interpretation, non-authoritative.</div>
+            </div>
+            <div class="reg-row">
+                <div class="reg-doc">Digital Omnibus proposal</div>
+                <div class="reg-ref">COM(2025) 833 final, 19 November 2025 — co-legislator negotiation, not adopted.</div>
+            </div>
+            <div class="reg-row">
+                <div class="reg-doc">Trade Secrets Directive</div>
+                <div class="reg-ref">Directive (EU) 2016/943 — three-stage ladder, serious AND irreparable conjunction.</div>
+            </div>
+            <div class="reg-row">
+                <div class="reg-doc">GDPR / ePrivacy</div>
+                <div class="reg-ref">Regulation (EU) 2016/679 and Directive 2002/58/EC — overlay gate, Art. 1(5) bridge.</div>
+            </div>
+            <div class="reg-row">
+                <div class="reg-doc">Digital Markets Act</div>
+                <div class="reg-ref">Regulation (EU) 2022/1925 — gatekeeper exclusion on Art. 5 requests and Art. 6(2)(d) sharing.</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="trust-section" id="trust">
+        <div class="section-label"><span class="section-icon">§</span> 08 · TRUST</div>
+        <h2>EVERY STEP,<br><em>auditable.</em></h2>
+        <p class="section-intro">
+            The trace is the product. Nothing happens off the record — no hidden tool
+            calls, no silent retrieval, no opaque chain-of-thought.
+        </p>
+        <div class="trust-grid">
+            <div class="trust-card">
+                <div class="trust-icon">§</div>
+                <div class="trust-body">
+                    <div class="trust-title">Source-anchored output.</div>
+                    <div class="trust-desc">Every Art. N(M) and Recital quote traces to local source files validated by validate_sources.py. The regulation is never paraphrased from training data.</div>
+                </div>
+                <div class="trust-badge">VERIFIED</div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">¶</div>
+                <div class="trust-body">
+                    <div class="trust-title">Reproducible decisions.</div>
+                    <div class="trust-desc">The role × chapter × stage anchor and seven-step method produce the same analysis from the same facts, for audit or second-counsel review.</div>
+                </div>
+                <div class="trust-badge">IMMUTABLE</div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">†</div>
+                <div class="trust-body">
+                    <div class="trust-title">Lint before delivery.</div>
+                    <div class="trust-desc">check_house_style.py runs against every generated deliverable; the conjunction discipline blocks an Art. 4(8) refusal drafted on trade-secret status alone.</div>
+                </div>
+                <div class="trust-badge">ENFORCED</div>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">**</div>
+                <div class="trust-body">
+                    <div class="trust-title">EU-native.</div>
+                    <div class="trust-desc">Built around the Data Act chapters, the Commission FAQ, the Digital Omnibus tracker, and Member State implementation. Not retrofitted.</div>
+                </div>
+                <div class="trust-badge">NATIVE</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="readme-section" id="readme">
+        <div class="readme-inner">
+            <div class="section-label" style="margin-bottom: 1.5rem;">
+                <span class="section-icon">§</span> 09 · README.MD
+            </div>
+            <div class="readme-content"><h1>EU Data Act Practitioner Skill — Deployment Guide</h1>
+<p>See <a href="CHANGELOG.md">CHANGELOG.md</a> for version history.</p>
+<p><strong>Status: pre-review (v0.9).</strong> Foundation phases (architecture, source layer, method, gates, router) are complete. Scenario cards, templates, and eval loop are pending. Do not symlink into <code>~/.claude/skills/</code> for production use until v1.0 (post-eval) is released.</p>
+<h2>Overview</h2>
+<p>Practitioner-grade analysis and drafting on <strong>Regulation (EU) 2023/2854</strong> (the Data Act). Calibrated for senior legal counsel, compliance officers, and product counsel working with the Data Act in client-facing or in-house contexts.</p>
+<p>The skill's architectural anchor is <strong>role × chapter × stage</strong>. Every matter is positioned by identifying:</p>
+<ul>
+<li>which Data Act roles the parties play (user, data holder, data recipient, third party, customer, provider, public sector body, plus any concurrent GDPR roles);</li>
+<li>which chapter(s) of the regulation govern (II–VIII);</li>
+<li>which stage of that chapter's process the matter is at.</li>
+</ul>
+<p>The anchor determines which references load and which scenario card the skill applies.</p>
+<h2>Coverage</h2>
+<table>
+<thead>
+<tr>
+<th>Chapter</th>
+<th>Articles</th>
+<th>Operative depth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ch II</td>
+<td>3–7</td>
+<td>Full — IoT product and related service data; B2C and B2B sharing</td>
+</tr>
+<tr>
+<td>Ch III</td>
+<td>8–12</td>
+<td>Full — mandatory B2B sharing under other Union law (FRAND, compensation)</td>
+</tr>
+<tr>
+<td>Ch IV</td>
+<td>13</td>
+<td>Full — unfair contract terms unilaterally imposed in B2B data contracts</td>
+</tr>
+<tr>
+<td>Ch V</td>
+<td>14–22</td>
+<td>Full — public sector exceptional-need access</td>
+</tr>
+<tr>
+<td>Ch VI</td>
+<td>23–31</td>
+<td>Full — switching between data processing services</td>
+</tr>
+<tr>
+<td>Ch VII</td>
+<td>32</td>
+<td>Full — third-country governmental access</td>
+</tr>
+<tr>
+<td>Ch VIII</td>
+<td>33–36</td>
+<td>Gate-only, except Arts. 34–35 where they serve Ch VI</td>
+</tr>
+</tbody>
+</table>
+<h3>Cross-regime gates</h3>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Reference file</th>
+<th>Posture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GDPR + ePrivacy</td>
+<td><code>references/gates/gdpr-overlay.md</code></td>
+<td>Operative when personal data or terminal-equipment access is in scope</td>
+</tr>
+<tr>
+<td>Trade Secrets Directive (EU) 2016/943</td>
+<td><code>references/gates/trade-secrets-directive.md</code></td>
+<td>Operative when trade-secret protection is claimed or asserted</td>
+</tr>
+<tr>
+<td>DMA gatekeeper exclusion</td>
+<td><code>references/gates/dma-gatekeeper.md</code></td>
+<td>Operative on Art. 5 third-party requests and Art. 6(2)(d) onward sharing</td>
+</tr>
+<tr>
+<td>Sectoral lex specialis</td>
+<td><code>references/gates/sectoral-lex-specialis.md</code></td>
+<td>Warn-only (vehicles, medical devices, DORA, NIS2, CRA, AI Act, eIDAS, energy, agriculture, telecoms)</td>
+</tr>
+<tr>
+<td>Member State implementing law</td>
+<td><code>references/gates/member-state.md</code></td>
+<td>Warn-only (competent authorities, dispute settlement, penalties)</td>
+</tr>
+</tbody>
+</table>
+<h2>File structure</h2>
+<pre><code>eu-data-act/
+├── SKILL.md                              # Entry point and router
+├── CHANGELOG.md                          # Version history
+├── references/
+│   ├── method/
+│   │   ├── analysis-method.md            # The seven-step cognitive flow
+│   │   └── house-style.md                # Voice, length, citation, structure
+│   ├── gates/
+│   │   ├── gdpr-overlay.md               # Art. 1(5) bridge, Case A/B, ePrivacy
+│   │   ├── trade-secrets-directive.md    # TSD ladder, serious-AND-irreparable
+│   │   ├── dma-gatekeeper.md             # Art. 5(3) exclusion, Art. 6(2)(d)
+│   │   ├── sectoral-lex-specialis.md     # Warn-only sectoral catalogue
+│   │   └── member-state.md               # Warn-only MS implementing law
+│   ├── gotchas.md                        # 20 numbered failure-mode entries
+│   └── scenarios/                        # (Phase 5 — pre-walked role × chapter × stage cards)
+├── sources/
+│   ├── regulation-2023-2854.md           # Verbatim Data Act (119 recitals + 50 articles)
+│   ├── faq-v1-4.md                       # Commission FAQ v1.4 (22 Jan 2026, CC BY 4.0)
+│   ├── digital-omnibus-amendments-tracker.md
+│   ├── mcts-sccs-recommendation-pointer.md
+│   ├── vehicle-data-guidance-pointer.md
+│   ├── _versions.json                    # Source provenance
+│   └── _manifest.sha256                  # Source checksums
+├── scripts/
+│   └── validate_sources.py               # Source layer validator (20/20 checks)
+├── templates/                            # (Phase 6 — drafting templates)
+└── evals/                                # (Phase 7 — eval fixtures + grading)
+</code></pre>
+<h2>Deployment</h2>
+<h3>Claude Code (recommended once reviewed)</h3>
+<p>Symlink the skill folder into <code>~/.claude/skills/</code> once it reaches v1.0:</p>
+<pre><code class="language-bash">ln -s ~/CLAUDE_PROJECTS/SKILLS/claude-skills/skills/eu-data-act ~/.claude/skills/eu-data-act
+</code></pre>
+<p>Do not symlink the pre-review v0.9 build into production. Use a sandbox or local copy if you want to exercise the foundation work before v1.0 ships.</p>
+<h3>Claude.ai (User Skills)</h3>
+<p>Upload the entire <code>eu-data-act/</code> folder structure under Settings → Profile → Custom Skills once v1.0 ships.</p>
+<h2>Trigger phrases</h2>
+<ul>
+<li>"Data Act" / "Datengesetz" / "Regulation (EU) 2023/2854"</li>
+<li>"Art. 4(1) request" / "Art. 5(1) third-party request" / "trade-secret handbrake"</li>
+<li>"cloud switching obligations" / "Chapter VI" / "Art. 25 mandatory terms"</li>
+<li>"Chapter V exceptional need" / "Art. 17 public-sector request"</li>
+<li>"Art. 13 unfair contract terms" / "Art. 32 third-country access"</li>
+<li>References to specific Data Act articles or recitals.</li>
+</ul>
+<h2>Source layer validator</h2>
+<p>Run before any release or downstream symlink:</p>
+<pre><code class="language-bash">python3 scripts/validate_sources.py --verbose
+</code></pre>
+<p>Checks heading taxonomy (every expected recital, article, and FAQ question), pointer-file presence, manifest checksums, and <code>_versions.json</code> structure. Exit 0 means all checks pass. Current state: 20/20.</p>
+<h2>Regulatory basis</h2>
+<table>
+<thead>
+<tr>
+<th>Document</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EU Data Act</td>
+<td>Regulation (EU) 2023/2854</td>
+</tr>
+<tr>
+<td>Commission FAQ on the Data Act</td>
+<td>v1.4 (22 January 2026), CC BY 4.0</td>
+</tr>
+<tr>
+<td>Digital Omnibus proposal</td>
+<td>COM(2025) 833 final, 19 November 2025 (co-legislator negotiation, not adopted)</td>
+</tr>
+<tr>
+<td>Trade Secrets Directive</td>
+<td>Directive (EU) 2016/943</td>
+</tr>
+<tr>
+<td>GDPR</td>
+<td>Regulation (EU) 2016/679</td>
+</tr>
+<tr>
+<td>ePrivacy Directive</td>
+<td>Directive 2002/58/EC</td>
+</tr>
+<tr>
+<td>Digital Markets Act</td>
+<td>Regulation (EU) 2022/1925</td>
+</tr>
+</tbody>
+</table>
+<h2>License and disclaimer</h2>
+<p>Licensed under <strong>AGPL-3.0</strong> — see <a href="../../LICENSE">LICENSE</a> at the repo root.</p>
+<p>This skill provides structured guidance based on the EU Data Act, the Commission's FAQ, and adjacent EU law. It does not constitute legal advice. Substantive deliverables produced with the skill should be reviewed by qualified legal counsel with Data Act expertise.</p>
+<hr>
+<p><em>Created by Oliver Schmidt-Prietz — OneZero Legal</em></p></div>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <span class="footer-text">onezero.legal · /SKILLS/DATA.ACT · v1.3</span>
+        <nav class="footer-links">
+            <a href="https://onezero.legal">Portfolio</a>
+            <a href="#features">Capabilities</a>
+            <a href="#workflow">Workflow</a>
+            <a href="#readme">README</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

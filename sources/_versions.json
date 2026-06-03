@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "last_check_date": "2026-05-15",
+  "sources": {
+    "regulation": {
+      "title": "Regulation (EU) 2023/2854 of the European Parliament and of the Council of 13 December 2023 on harmonised rules on fair access to and use of data and amending Regulation (EU) 2017/2394 and Directive (EU) 2020/1828 (Data Act)",
+      "short_title": "Data Act",
+      "celex": "32023R2854",
+      "eli": "http://data.europa.eu/eli/reg/2023/2854/oj",
+      "adopted": "2023-12-13",
+      "oj_publication": "2023-12-22",
+      "entry_into_force": "2024-01-11",
+      "general_application": "2025-09-12",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R2854",
+      "file": "regulation-2023-2854.md",
+      "status": "ingested",
+      "fetch_date": "2026-05-15",
+      "ingestion_date": "2026-05-15",
+      "size_bytes": 288281,
+      "sha256": "da54f73ce60ffaafea8ffb417497bfbfc747374dc6e842953566c9425c3db0af",
+      "validation": {
+        "recitals_expected": 119,
+        "recitals_found": 119,
+        "articles_expected": 50,
+        "articles_found": 50,
+        "chapters_expected": ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI"]
+      }
+    },
+    "faq": {
+      "title": "European Commission FAQ on the Data Act",
+      "version": "1.4",
+      "published_date": "2026-01-22",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-frequently-asked-questions-about-data-act",
+      "pdf_url": "https://ec.europa.eu/newsroom/dae/redirection/document/108144",
+      "actual_fetch_url": "https://www.dirittobancario.it/wp-content/uploads/2026/01/FAQ-Data-Act-versione-1.4-22-gennaio-2026.pdf",
+      "fetch_note": "Commission redirect URL blocked by robots.txt at fetcher level; fetched from third-party CC BY 4.0 host (Italian banking law publisher). Same Commission CC BY 4.0 file. Content verified by spot-checks against expected phrasing.",
+      "known_source_typo": "The PDF's opening sentence cites the regulation as 2023/2584 (should be 2023/2854). Preserved verbatim with a flag in the file header.",
+      "file": "faq-v1-4.md",
+      "status": "ingested",
+      "fetch_date": "2026-05-15",
+      "ingestion_date": "2026-05-15",
+      "size_bytes": 118250,
+      "sha256": "f9fde6e26d226c520d1955de845a2f6f0bee139af88196b7a8f782b24ac24353",
+      "validation": {
+        "questions_expected": 84,
+        "questions_found": 84,
+        "letter_variants": ["Q5a", "Q13a", "Q22a", "Q25a", "Q25b", "Q34a", "Q42a", "Q42b", "Q58a", "Q58b"],
+        "sections_expected": 10
+      },
+      "authoritative": false,
+      "framing_note": "The FAQ opening states expressly that it is not authoritative and does not extend rights or obligations. Outputs that rely on the FAQ must frame it as the Commission's interpretation, not binding."
+    },
+    "digital_omnibus_data_act": {
+      "title": "Proposal for a Regulation amending Regulations (EU) 2016/679, (EU) 2023/2854 and others (Digital Omnibus Regulation)",
+      "commission_proposal_date": "2025-11-19",
+      "legislative_status_as_of_check": "proposal stage; co-legislator negotiations ongoing (May 2026)",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-regulation-proposal",
+      "file": "digital-omnibus-amendments-tracker.md",
+      "status": "tracker_skeleton_created",
+      "critical_warning": "These amendments are PROPOSALS, not law. Current Reg. 2023/2854 text remains in force. The skill must surface this distinction in every output that touches an affected provision."
+    },
+    "mcts_sccs_recommendation": {
+      "title": "Commission Recommendation on non-binding Model Contractual Terms on data access and use and non-binding Standard Contractual Clauses for cloud computing contracts under the Data Act",
+      "published_date": "2025-11-19",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/library/draft-recommendation-non-binding-model-contractual-terms-data-access-and-use-and-non-binding",
+      "file": "mcts-sccs-recommendation-pointer.md",
+      "status": "ingested_as_pointer",
+      "ingestion_date": "2026-05-15",
+      "sha256": "e838e45f2d3ffc063842dd4fa10c240e668ebff5185b22908a7df449c6c3ca1c",
+      "scope_note": "Pointer file only. Clause text is not redistributed; the Commission landing page is the authoritative source.",
+      "binding": false,
+      "framing_note": "Non-binding. Treat as a drafting benchmark and gap-check, not a safe harbour."
+    },
+    "vehicle_data_guidance": {
+      "title": "Commission Guidance on Vehicle Data accompanying the Data Act",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/library/guidance-vehicle-data-accompanying-data-act",
+      "file": "vehicle-data-guidance-pointer.md",
+      "status": "ingested_as_pointer",
+      "ingestion_date": "2026-05-15",
+      "sha256": "4bdeac36937110f0f1d659e9efd4fe8bb53cd49e41c0c68e1b596194b12c6315",
+      "scope_note": "Sector-specific Commission guidance for automotive. Gate-level coverage only in this skill; full sectoral analysis is out of scope. Pointer file only; guidance text is not redistributed."
+    },
+    "data_act_legal_helpdesk": {
+      "title": "Data Act Legal Helpdesk",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/policies/data-act-legal-helpdesk",
+      "status": "reference_only_no_ingestion",
+      "note": "The Commission's legal helpdesk is a live service. Pointer only; not bundled."
+    }
+  },
+  "_note_on_updates": "This skill is a versioned static snapshot. The skill never auto-rewrites these files. When sources change (new FAQ version, Omnibus adoption, new MCT version), bump CHANGELOG, update last_check_date, archive the prior file under sources/_archive/{YYYY-MM-DD}/, and re-run scripts/validate_sources.py before release."
+}
