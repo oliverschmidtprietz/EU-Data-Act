@@ -31,7 +31,7 @@ Then, based on the matter, load:
    - `sectoral-lex-specialis.md` whenever the matter involves a regulated sector (automotive, medical devices, financial services, energy, AI, cybersecurity, agriculture, telecoms)
    - `member-state.md` whenever the matter depends on Member State implementation (competent authority designation, complaint forum, penalties, dispute settlement)
 
-5. The applicable scenario card in `references/scenarios/` (added in Phase 5).
+5. The applicable scenario card in `references/scenarios/`.
 
 6. Quote from the source files when stating what the regulation or FAQ says:
    - `sources/regulation-2023-2854.md` is the verbatim Data Act
@@ -68,7 +68,7 @@ Many real matters span chapters. Cross-chapter scenarios get separate analyses p
 
 ## Scenario routing table
 
-The skill maps user prompts to scenario cards based on the role × chapter × stage anchor. Scenario cards are pre-walked applications of the seven-step method for common matter types. The full table will populate in Phase 5; this is the structural map.
+The skill maps user prompts to scenario cards based on the role × chapter × stage anchor. Scenario cards are pre-walked applications of the seven-step method for common matter types; the cards live in `references/scenarios/`.
 
 | Role × chapter × stage | Card | Notes |
 |------------------------|------|-------|
