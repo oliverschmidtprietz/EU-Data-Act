@@ -52,6 +52,10 @@
     },
     "digital_omnibus_data_act": {
       "title": "Proposal for a Regulation amending Regulations (EU) 2016/679, (EU) 2023/2854 and others (Digital Omnibus Regulation)",
+      "com_number": "COM(2025) 837 final",
+      "procedure": "2025/0360(COD)",
+      "com_number_correction_note": "Corrected 2026-07-21. Releases up to v1.3 cited this proposal as 'COM(2025) 833 final'; EUR-Lex holds no 52025PC0833. The 19 Nov 2025 package is COM(2025) 836 (AI), COM(2025) 837 (this instrument) and COM(2025) 838 (European Business Wallets). Verified against EUR-Lex CELEX 52025PC0837 and the EP Legislative Train digital-package entry.",
+      "eurlex_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:52025PC0837",
       "commission_proposal_date": "2025-11-19",
       "legislative_status_as_of_check": "proposal stage; co-legislator negotiations ongoing (May 2026)",
       "source_url": "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-regulation-proposal",
@@ -66,7 +70,7 @@
       "file": "mcts-sccs-recommendation-pointer.md",
       "status": "ingested_as_pointer",
       "ingestion_date": "2026-05-15",
-      "sha256": "e838e45f2d3ffc063842dd4fa10c240e668ebff5185b22908a7df449c6c3ca1c",
+      "sha256": "1767582aee1c7c52f95aca8177fa64f9f42a0fead6d5628e426803cd66fe23d0",
       "scope_note": "Pointer file only. Clause text is not redistributed; the Commission landing page is the authoritative source.",
       "binding": false,
       "framing_note": "Non-binding. Treat as a drafting benchmark and gap-check, not a safe harbour."

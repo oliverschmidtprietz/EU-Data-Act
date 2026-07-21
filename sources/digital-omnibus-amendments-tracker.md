@@ -2,7 +2,9 @@
 
 **Status:** Proposal stage as of 15 May 2026. NOT law. Current text of Regulation (EU) 2023/2854 remains in force unchanged.
 
-**Source:** European Commission proposal for the Digital Omnibus Regulation, COM(2025) 833 final, presented 19 November 2025. The proposal amends multiple instruments including the Data Act, GDPR, ePrivacy Directive, NIS2 Directive, and others.
+**Source:** European Commission proposal for the Digital Omnibus Regulation, **COM(2025) 837 final**, presented 19 November 2025, procedure **2025/0360(COD)**. The proposal amends multiple instruments including the Data Act, GDPR, ePrivacy Directive, NIS2 Directive, and others; the GDPR amendments sit in **Article 3** of the proposal. Primary source: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:52025PC0837
+
+*Instrument note (corrected 2026-07-21):* the Digital Omnibus package of 19 November 2025 comprises COM(2025) 836 (Digital Omnibus on AI, procedure 2025/0359(COD)), COM(2025) 837 (Digital Omnibus Regulation — data, privacy and cybersecurity, the instrument tracked here) and COM(2025) 838 (European Business Wallets). Earlier releases of this skill cited the proposal as "COM(2025) 833 final" (see `CHANGELOG.md`); **no Commission proposal bears that number** and the citation has been corrected throughout. The substantive amendment analysis below was unaffected — it always described the single instrument that amends the Data Act, the GDPR and ePrivacy together, which is COM(2025) 837.
 
 **Critical rule for skill output:**
 

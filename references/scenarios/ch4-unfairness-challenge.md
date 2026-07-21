@@ -117,7 +117,7 @@ The substantive test runs in three routes; the challenger runs whichever fits, o
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 13 of Regulation (EU) 2023/2854 (Data Act) governs. Verbatim text at `sources/regulation-2023-2854.md` Art. 13 (lines 917-958); operative recitals at Recitals 58-62. Temporal scoping at Art. 50 (lines 1711-1727).
-- **Proposed amendment under Digital Omnibus.** COM(2025) 833 final does not materially alter Art. 13. The proposal does affect adjacent Ch IV-touching matters (e.g. Art. 25 early-termination penalties in Ch VI; the consolidation absorbing other instruments) but the Art. 13 unfairness test stands. See `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under Digital Omnibus.** COM(2025) 837 final does not materially alter Art. 13. The proposal does affect adjacent Ch IV-touching matters (e.g. Art. 25 early-termination penalties in Ch VI; the consolidation absorbing other instruments) but the Art. 13 unfairness test stands. See `sources/digital-omnibus-amendments-tracker.md`.
 
 ---
 

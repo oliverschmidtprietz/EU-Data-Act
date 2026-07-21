@@ -132,7 +132,7 @@ The provider "shall inform the customer about the existence of a request of a th
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 32(1) to (5) of Regulation (EU) 2023/2854 (Data Act) governs. The three Art. 32(3) conditions are conjunctive. National-body consultation is available. Customer notification under Art. 32(5) is mandatory. Verbatim text at `sources/regulation-2023-2854.md` Art. 32; Recitals 101 and 102.
-- **Proposed amendment under Digital Omnibus.** COM(2025) 833 final (19 November 2025) does not propose substantive amendment to Art. 32 as such, but the proposed new Art. 4(8) and 5(11) refusal ground for substantial risk of unlawful trade-secret acquisition, use, or disclosure to third-country entities operating under weaker-protection legal regimes is structurally adjacent. The proposal does not change Art. 32 itself. Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under Digital Omnibus.** COM(2025) 837 final (19 November 2025) does not propose substantive amendment to Art. 32 as such, but the proposed new Art. 4(8) and 5(11) refusal ground for substantial risk of unlawful trade-secret acquisition, use, or disclosure to third-country entities operating under weaker-protection legal regimes is structurally adjacent. The proposal does not change Art. 32 itself. Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md`.
 
 The output cites current law as operative. Art. 32 is not on the principal Omnibus amendment list.
 

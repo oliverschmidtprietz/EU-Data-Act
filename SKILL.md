@@ -4,7 +4,7 @@ description: Practitioner skill for advising on EU Regulation 2023/2854 (Data Ac
 metadata:
   author: Oliver Schmidt-Prietz
   license: AGPL-3.0
-  version: 1.3
+  version: 1.4
 ---
 
 # EU Data Act practitioner skill
@@ -95,7 +95,7 @@ The skill maps user prompts to scenario cards based on the role × chapter × st
 | Provider × Ch VII × third-country request | `ch7-third-country-request.md` | Art. 32(3) cumulative limbs; national body consultation |
 | Any × cross-chapter × gap analysis | `cross-gap-analysis.md` | Multi-chapter compliance review |
 | Any × cross-chapter × GDPR-DA boundary | `cross-gdpr-boundary.md` | Personal vs non-personal allocation; Case A/B |
-| Any × Digital Omnibus impact | `cross-omnibus-impact.md` | Provisions affected by COM(2025) 833 final |
+| Any × Digital Omnibus impact | `cross-omnibus-impact.md` | Provisions affected by COM(2025) 837 final |
 
 Where the prompt does not map cleanly to a scenario card, the skill applies the seven-step method directly from `references/method/analysis-method.md`. Scenario cards are accelerators, not gatekeepers.
 
@@ -128,7 +128,7 @@ Every Data Act output produced by this skill must:
 4. Apply limbs one at a time when the test has multiple limbs.
 5. Run the relevant gates and state the result in the output, not in a footnote.
 6. State temporal applicability when the answer depends on it.
-7. Flag the Digital Omnibus where COM(2025) 833 final affects the provisions used.
+7. Flag the Digital Omnibus where COM(2025) 837 final affects the provisions used.
 8. State assumptions where any fact was assumed rather than provided.
 9. Lint the output before delivery. Run `python3 scripts/check_house_style.py <path-to-output>` against any generated memo, letter, or drafting input and fix every finding. The default invocation scans the skill's own source files (clean by construction); the path argument is required to lint a generated deliverable. The linter catches em dashes, banned connectors, preambles, and marketing language anywhere in the file — including inside `**bold markdown headers**`, which is the most common drift pattern.
 
@@ -147,7 +147,7 @@ Refusal is not "I can't help." Refusal is "the analysis as posed would be wrong;
 
 ## Current-law vs proposal discipline
 
-The Commission tabled the Digital Omnibus regulation proposal (COM(2025) 833 final) on 19 November 2025. The proposal includes consequential amendments to the Data Act, particularly to Arts. 4(8), 5(11), 15, 25, 31, and the consolidation of Regulation (EU) 2022/868 (DGA), Directive (EU) 2019/1024 (Open Data Directive), Regulation (EU) 2018/1807 (Free Flow of Non-Personal Data Regulation), and Regulation (EU) 2019/1150 (Platform-to-Business Regulation) into the Data Act. As of the skill's source date (15 May 2026), the proposal is in co-legislator negotiation and has not been adopted.
+The Commission tabled the Digital Omnibus regulation proposal (COM(2025) 837 final) on 19 November 2025. The proposal includes consequential amendments to the Data Act, particularly to Arts. 4(8), 5(11), 15, 25, 31, and the consolidation of Regulation (EU) 2022/868 (DGA), Directive (EU) 2019/1024 (Open Data Directive), Regulation (EU) 2018/1807 (Free Flow of Non-Personal Data Regulation), and Regulation (EU) 2019/1150 (Platform-to-Business Regulation) into the Data Act. As of the skill's source date (15 May 2026), the proposal is in co-legislator negotiation and has not been adopted.
 
 Every output that touches an affected provision must state the current law first, then flag the proposal second, with status (co-legislator negotiation, not adopted). The Digital Omnibus tracker at `sources/digital-omnibus-amendments-tracker.md` is the reference list.
 

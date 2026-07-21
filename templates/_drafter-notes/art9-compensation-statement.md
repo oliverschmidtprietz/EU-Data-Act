@@ -30,7 +30,7 @@ The Art. 9 compensation statement is the data holder's primary written articulat
 - Treating R&D investment in the connected product as fully chargeable. R&D in the product itself is largely not attributable to making the data available; the attributable share is typically a small fraction.
 - Failing to address the Art. 8(3) non-discrimination position. Drafters who have not compared the calculation to comparable recipient arrangements are exposed.
 - Discrimination against the recipient through indirect terms. The compensation statement is one of multiple terms; if other terms (delivery timing, format, exclusivity, audit rights) are imposed differently on this recipient vs comparables, the package as a whole may be discriminatory even if the headline compensation is identical.
-- Missing the Digital Omnibus check. COM(2025) 833 final affects some Ch III provisions; the drafter should check `sources/digital-omnibus-amendments-tracker.md` to confirm whether Art. 9 has any forward-looking flag relevant to the statement.
+- Missing the Digital Omnibus check. COM(2025) 837 final affects some Ch III provisions; the drafter should check `sources/digital-omnibus-amendments-tracker.md` to confirm whether Art. 9 has any forward-looking flag relevant to the statement.
 
 ## Length and tone
 

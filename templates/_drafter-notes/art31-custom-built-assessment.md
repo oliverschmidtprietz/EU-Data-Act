@@ -11,7 +11,7 @@ The Art. 31 carve-out is narrow and is being used aggressively by some cloud pro
 - **Art. 31(3) information obligation is mandatory.** Where the carve-out applies, the provider must inform the prospective customer of the obligations of Ch VI that do not apply. This is pre-contractual. A provider that relies on the carve-out without giving the Art. 31(3) information is itself non-compliant; the carve-out applies but the provider has breached the disclosure obligation. The template's Part 2 produces the customer-facing extract.
 - **The carve-out does not relieve the full chapter.** Section 7 of the template enumerates what is and is not carved out. Arts. 25, 26, 27, 28 still apply. Drafters who treat Art. 31 as a comprehensive escape from Ch VI are wrong.
 - **Aggressive carve-out claims attract competent-authority attention.** The competent authority under Art. 37(4)(b) (with experience in data and electronic communications services) is positioned to scrutinise carve-out claims. Providers should expect that a carve-out claim, particularly where the customer disputes it, will be reviewed.
-- **The Digital Omnibus.** COM(2025) 833 final proposes amendments that may affect Art. 31 mechanics. The current source-freshness date is 15 May 2026; the proposal is in co-legislator negotiation, not adopted. The drafter should check `sources/digital-omnibus-amendments-tracker.md` and draft on current law.
+- **The Digital Omnibus.** COM(2025) 837 final proposes amendments that may affect Art. 31 mechanics. The current source-freshness date is 15 May 2026; the proposal is in co-legislator negotiation, not adopted. The drafter should check `sources/digital-omnibus-amendments-tracker.md` and draft on current law.
 
 ## Pointers to gates and scenarios
 

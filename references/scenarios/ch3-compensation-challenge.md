@@ -97,7 +97,7 @@ Art. 9 reads as a constraint on the holder's pricing; the recipient's challenge 
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 9 of Regulation (EU) 2023/2854 (Data Act) governs. The seven-limb test above is the operative framework. Verbatim text at `sources/regulation-2023-2854.md` Art. 9 (lines 800-825); operative recitals at Recitals 46, 47, 49, 51.
-- **Proposed amendment under Digital Omnibus.** COM(2025) 833 final does not materially alter Art. 9. The Art. 9(5) guidelines remain pending separately (FAQ Q72: expected Q2/Q3 2026, not adopted as of May 2026). See `references/gotchas.md` entry 16 and `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under Digital Omnibus.** COM(2025) 837 final does not materially alter Art. 9. The Art. 9(5) guidelines remain pending separately (FAQ Q72: expected Q2/Q3 2026, not adopted as of May 2026). See `references/gotchas.md` entry 16 and `sources/digital-omnibus-amendments-tracker.md`.
 
 ---
 

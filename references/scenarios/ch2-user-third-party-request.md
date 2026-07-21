@@ -108,7 +108,7 @@ Art. 5(7) personal data legal-basis condition. Where the user is not the data su
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 5(1), Art. 5(3), Art. 5(7), Art. 5(9)-(11) of Regulation (EU) 2023/2854 (Data Act) govern. Verbatim text at `sources/regulation-2023-2854.md` Art. 5; operative recitals at Recitals 30, 33, 34. The Commission maintains the public register of designated gatekeepers under DMA Art. 3.
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final proposes a new refusal ground at Art. 5(11) for substantial risk of unlawful trade-secret acquisition by third-country entities under weaker legal regimes (parallel to the proposed Art. 4(8) amendment). Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final proposes a new refusal ground at Art. 5(11) for substantial risk of unlawful trade-secret acquisition by third-country entities under weaker legal regimes (parallel to the proposed Art. 4(8) amendment). Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md`.
 
 ---
 

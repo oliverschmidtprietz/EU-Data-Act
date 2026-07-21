@@ -94,7 +94,7 @@ Cumulative obligations on the data holder, each independent.
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 4 of Regulation (EU) 2023/2854 (Data Act) governs. Verbatim text at `sources/regulation-2023-2854.md` Art. 4(1)-(14); operative recitals at Recitals 26-31, 34.
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final does not propose substantive amendments to the Art. 4(1) response duties. Proposed amendments to Art. 4(8) (new third-country misuse refusal ground) are relevant downstream if the data holder is considering refusal. See `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final does not propose substantive amendments to the Art. 4(1) response duties. Proposed amendments to Art. 4(8) (new third-country misuse refusal ground) are relevant downstream if the data holder is considering refusal. See `sources/digital-omnibus-amendments-tracker.md`.
 
 ---
 

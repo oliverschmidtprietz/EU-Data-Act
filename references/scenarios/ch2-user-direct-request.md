@@ -95,7 +95,7 @@ Art. 4(5) sets the verification ceiling. The data holder may ask only what is ne
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 4(1) of Regulation (EU) 2023/2854 (Data Act) is the operative right. Verbatim text at `sources/regulation-2023-2854.md` Art. 4(1); operative recitals at Recitals 26-30. Temporal applicability: 12 September 2025 for the access right; data generated before that date is out of scope per Commission interpretation in FAQ Q4 and Q34a.
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final does not propose substantive amendments to Art. 4(1) or Art. 4(5). Proposed amendments to Art. 4(8) (new third-country misuse refusal ground) are relevant downstream if the data holder refuses. See `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final does not propose substantive amendments to Art. 4(1) or Art. 4(5). Proposed amendments to Art. 4(8) (new third-country misuse refusal ground) are relevant downstream if the data holder refuses. See `sources/digital-omnibus-amendments-tracker.md`.
 
 ---
 

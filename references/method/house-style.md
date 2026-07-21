@@ -108,7 +108,7 @@ When roles shift across phases of the scenario, the disclosure breaks them out b
 
 ### Current-law-vs-proposal tagging
 
-Outputs that touch a provision affected by the Digital Omnibus (COM(2025) 833 final, 19 November 2025) state the current law and flag the proposed amendment. The tagging convention:
+Outputs that touch a provision affected by the Digital Omnibus (COM(2025) 837 final, 19 November 2025) state the current law and flag the proposed amendment. The tagging convention:
 
 - **Current law.** [Statement of what the regulation says today, with citation.]
 - **Proposed amendment under Digital Omnibus.** [Statement of what the proposal would change, with the proposal's status: in co-legislator negotiation as of [date]; not adopted.]

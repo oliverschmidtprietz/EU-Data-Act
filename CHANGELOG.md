@@ -6,6 +6,19 @@ Format: `## [vX.Y] — YYYY-MM-DD`
 
 ---
 
+## [v1.4] — 2026-07-21
+
+Digital Omnibus instrument-citation correction across the skill. Legal-accuracy patch; no change to the analysis method, gates, scenarios' substance, templates or the source layer.
+
+- **Wrong instrument corrected in 48 places across 35 files.** Every reference to the Digital Omnibus proposal cited *COM(2025) 833 final*. The Digital Omnibus package of 19 November 2025 is **COM(2025) 836** (Digital Omnibus on AI, 2025/0359(COD)), **COM(2025) 837** (Digital Omnibus Regulation — data, privacy and cybersecurity, 2025/0360(COD), carrying the GDPR amendments in **Article 3**) and **COM(2025) 838** (European Business Wallets). **No Commission proposal bears the number COM(2025) 833** — EUR-Lex has no `52025PC0833`. All occurrences now read COM(2025) 837 final — `SKILL.md`, `README.md`, `index.html`, `references/method/*`, all 22 scenario cards, `references/gotchas.md`, the drafter notes, `sources/digital-omnibus-amendments-tracker.md` and `sources/mcts-sccs-recommendation-pointer.md`.
+- **Tracker now carries the pinpoint and provenance.** `sources/digital-omnibus-amendments-tracker.md` records the procedure number 2025/0360(COD), the Article 3 GDPR pinpoint, the primary-source URL and an instrument note stating that releases up to v1.3 cited a number that does not exist.
+- **Substance unaffected — and this is the reason the error survived.** The tracker always described a *single* instrument amending the Data Act, GDPR, ePrivacy and NIS2 together, which is exactly what COM(2025) 837 is. Every substantive amendment description (Arts. 4(8)/5(11) third-country trade-secret ground, narrowed Ch. V conditions, expanded Art. 31 custom-built carve-out, Art. 25 early-termination penalties, absorption of the DGA, Open Data Directive, Free Flow of Non-Personal Data Regulation and P2B Regulation) is unchanged.
+- Verified 2026-07-21 against EUR-Lex (CELEX 52025PC0837) and the European Parliament Legislative Train entry for the digital package; corroborated by `data-subject-rights/sources/verification-log.md` §4.1.
+
+**Status:** reviewed (carried from v1.3).
+
+---
+
 ## [v1.3] — 2026-05-31
 
 German DA-DG entry-into-force correction. The v1.2 Germany note hedged that Bundesrat approval and entry into force were still "to be confirmed". They are now confirmed: the **Data Act-Durchführungsgesetz is in force since 30 May 2026**.

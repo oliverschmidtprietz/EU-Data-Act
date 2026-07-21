@@ -117,7 +117,7 @@ Art. 22(4) second subparagraph: the requesting body shall take into account the 
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Articles 14-22 of Regulation (EU) 2023/2854 (Data Act) govern. Art. 22(1) cooperation duty; Art. 22(2) use limit on inter-body exchanges; Art. 22(3) ex ante notification; Art. 22(4) competent authority examination and action. Verbatim text at `sources/regulation-2023-2854.md` Art. 22; operative recital at Recital 72 (cross-border).
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final (19 November 2025) does not directly amend Art. 22 as of the tracker's source date. The proposed narrowing of Art. 15(1)(b) non-emergency conditions reaches Art. 22 indirectly: a narrower substantive basis means fewer cross-border non-emergency requests survive Art. 22(4) competent authority examination. Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md` Chapter V entry.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final (19 November 2025) does not directly amend Art. 22 as of the tracker's source date. The proposed narrowing of Art. 15(1)(b) non-emergency conditions reaches Art. 22 indirectly: a narrower substantive basis means fewer cross-border non-emergency requests survive Art. 22(4) competent authority examination. Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md` Chapter V entry.
 
 The output cites current law as operative. The proposed amendment is forward-looking awareness only.
 

@@ -101,7 +101,7 @@ Procedural obligations on the data holder:
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 4(2) and Art. 4(3) of Regulation (EU) 2023/2854 (Data Act) govern. Verbatim text at `sources/regulation-2023-2854.md` Art. 4(2); operative recital at Recital 31 (last sentence preserves data subject rights against the handbrake) and Recital 29.
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final does not propose substantive amendments to Art. 4(2). The new proposed Art. 4(8) ground (third-country trade-secret misuse) is a parallel addition on a different regime; the safety handbrake is not amended. See `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final does not propose substantive amendments to Art. 4(2). The new proposed Art. 4(8) ground (third-country trade-secret misuse) is a parallel addition on a different regime; the safety handbrake is not amended. See `sources/digital-omnibus-amendments-tracker.md`.
 
 ---
 

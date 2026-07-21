@@ -124,7 +124,7 @@ The drafter runs each clause through the three substantive routes. The output is
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 13 of Regulation (EU) 2023/2854 (Data Act) governs. Verbatim text at `sources/regulation-2023-2854.md` Art. 13 (lines 917-958); operative recitals at Recitals 58-62. Temporal scoping at Art. 50.
-- **Proposed amendment under Digital Omnibus.** COM(2025) 833 final does not materially alter Art. 13 itself. The proposal touches adjacent Ch IV matters (Art. 25 early-termination penalties in Ch VI). The drafter checks `sources/digital-omnibus-amendments-tracker.md` at the start of any new drafting cycle; if any Art. 13-affecting amendment is adopted between drafting and execution, the drafter updates.
+- **Proposed amendment under Digital Omnibus.** COM(2025) 837 final does not materially alter Art. 13 itself. The proposal touches adjacent Ch IV matters (Art. 25 early-termination penalties in Ch VI). The drafter checks `sources/digital-omnibus-amendments-tracker.md` at the start of any new drafting cycle; if any Art. 13-affecting amendment is adopted between drafting and execution, the drafter updates.
 
 The output cites current law as operative.
 

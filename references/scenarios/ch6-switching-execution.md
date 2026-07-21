@@ -102,7 +102,7 @@ The switching plan is built from the timing limbs of Art. 25(2)-(5) and the enti
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Articles 23, 25, 26, 27, 30 of Regulation (EU) 2023/2854 (Data Act) govern the live execution. Operative recitals: Recital 82 (exportable data scope); Recital 83 (digital assets); Recital 84 (switching definition); Recital 85 (switching as a customer-driven multi-step process; third-party migration vendor); Recital 86 (functional equivalence IaaS-only); Recital 87 (extension burden of proof on provider; customer's extension right); Recital 92 (limits of source-provider obligations to own service environment).
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final (19 November 2025) proposes an expanded Art. 31 custom-built carve-out and SME / small-mid-cap exemption from non-IaaS obligations for pre-12-September-2025 contracts. For a live switch on a post-12-September-2025 contract today, the Omnibus does not change the regime. Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final (19 November 2025) proposes an expanded Art. 31 custom-built carve-out and SME / small-mid-cap exemption from non-IaaS obligations for pre-12-September-2025 contracts. For a live switch on a post-12-September-2025 contract today, the Omnibus does not change the regime. Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md`.
 
 The output cites current law as operative. The Omnibus discussion is forward-looking only.
 

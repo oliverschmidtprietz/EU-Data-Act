@@ -96,7 +96,7 @@ If the contract is for provision of a related service, the Art. 3(3) checklist a
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 3(1) (design and default-accessibility obligation) applies only to connected products and related services placed on the market after 12 September 2026 (Art. 50(2)). Art. 3(2) and Art. 3(3) (pre-contract information obligations) apply from 12 September 2025 to all in-scope contracts concluded thereafter. Verbatim text at `sources/regulation-2023-2854.md` Art. 3; operative recitals at Recitals 23-25.
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final does not propose substantive amendments to Art. 3. See `sources/digital-omnibus-amendments-tracker.md` for confirmation.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final does not propose substantive amendments to Art. 3. See `sources/digital-omnibus-amendments-tracker.md` for confirmation.
 
 ---
 

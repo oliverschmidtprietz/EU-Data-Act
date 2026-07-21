@@ -35,7 +35,7 @@ These three points distinguish a useful Data Act gap analysis from a checkbox ex
 
 - **One chapter per pass.** Each engaged chapter gets its own seven-step walk, its own role map, and its own gap table. Blending chapters into a single matrix produces analytical errors because the operative rules differ. A finding under Ch II ("the user has not been told about data access rights") and a finding under Ch VI ("the customer cannot retrieve exportable data on termination") are different obligations on different actors and need separate remediation tracks.
 - **Role per phase, not role overall.** An organisation typically plays multiple Data Act roles across product lines, customer relationships, and lifecycle phases. The role map captures the role for the specific obligation under review, not a single overall role label. The same organisation is data holder for its connected product, provider for its SaaS layer, customer for its cloud infrastructure, and possibly user for the connected products it consumes from suppliers. See `references/gotchas.md` entry 2 (manufacturer is not always the data holder) and the role-bifurcation discipline in `references/method/analysis-method.md`.
-- **Current law before proposal.** The gap analysis assesses the organisation against the current Data Act as published. The Digital Omnibus proposal (COM(2025) 833 final, 19 November 2025) is awareness only and goes in a separate "watch-list" column or footer. Building the gap analysis against proposed amendments produces an analysis that may become wrong if the proposal is amended or withdrawn. See `references/gotchas.md` entry 20 and `cross-omnibus-impact.md`.
+- **Current law before proposal.** The gap analysis assesses the organisation against the current Data Act as published. The Digital Omnibus proposal (COM(2025) 837 final, 19 November 2025) is awareness only and goes in a separate "watch-list" column or footer. Building the gap analysis against proposed amendments produces an analysis that may become wrong if the proposal is amended or withdrawn. See `references/gotchas.md` entry 20 and `cross-omnibus-impact.md`.
 
 ---
 
@@ -95,7 +95,7 @@ Run the gates for each chapter:
 
 ### Step 7: Synthesis with current-law-vs-proposal
 
-For each chapter, the gap analysis states the current law as the operative requirement. The Digital Omnibus proposal (COM(2025) 833 final, 19 November 2025) is flagged in a "watch-list" column on the gap table where the proposal materially affects the chapter (Arts. 4(8) and 5(11) refusal grounds; Art. 15 Ch V circumstances; Art. 25 early-termination penalties; Art. 31 custom-built carve-out; Art. 36 smart contracts; consolidation absorbing DGA, ODD, FFD, P2B). The watch-list entries inform risk and timing decisions; they do not change current-state compliance.
+For each chapter, the gap analysis states the current law as the operative requirement. The Digital Omnibus proposal (COM(2025) 837 final, 19 November 2025) is flagged in a "watch-list" column on the gap table where the proposal materially affects the chapter (Arts. 4(8) and 5(11) refusal grounds; Art. 15 Ch V circumstances; Art. 25 early-termination penalties; Art. 31 custom-built carve-out; Art. 36 smart contracts; consolidation absorbing DGA, ODD, FFD, P2B). The watch-list entries inform risk and timing decisions; they do not change current-state compliance.
 
 ---
 

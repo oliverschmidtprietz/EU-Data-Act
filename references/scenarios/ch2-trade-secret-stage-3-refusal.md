@@ -92,7 +92,7 @@ Art. 4(8) decomposes into eight cumulative limbs. The article text in `sources/r
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 4(8) of Regulation (EU) 2023/2854 (Data Act) governs. The eight-limb cumulative test above is the operative regime. Verbatim text at `sources/regulation-2023-2854.md` Art. 4(8); operative recital at Recital 31.
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final (19 November 2025) would add a new refusal ground for substantial risk of unlawful trade-secret acquisition, use, or disclosure to third-country entities operating under legal regimes with weaker protection than the EU. The amendment retains the case-by-case and objective-elements requirements. Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final (19 November 2025) would add a new refusal ground for substantial risk of unlawful trade-secret acquisition, use, or disclosure to third-country entities operating under legal regimes with weaker protection than the EU. The amendment retains the case-by-case and objective-elements requirements. Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md`.
 
 The output cites current law as operative. The proposed amendment is forward-looking awareness only.
 

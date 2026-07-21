@@ -1,6 +1,6 @@
 # cross-omnibus-impact
 
-**Anchor:** Any × cross-chapter × Digital Omnibus impact. The card operationalises the current-law-vs-proposal discipline (`references/gotchas.md` entries 19 and 20) across the build. It walks the Commission's Digital Omnibus proposal (COM(2025) 833 final, 19 November 2025) provision-by-provision against the current Data Act, identifies which scenarios are materially affected, and structures the "watch-list" framing the skill applies to every deliverable touching an affected provision. Reads from `sources/digital-omnibus-amendments-tracker.md`.
+**Anchor:** Any × cross-chapter × Digital Omnibus impact. The card operationalises the current-law-vs-proposal discipline (`references/gotchas.md` entries 19 and 20) across the build. It walks the Commission's Digital Omnibus proposal (COM(2025) 837 final, 19 November 2025) provision-by-provision against the current Data Act, identifies which scenarios are materially affected, and structures the "watch-list" framing the skill applies to every deliverable touching an affected provision. Reads from `sources/digital-omnibus-amendments-tracker.md`.
 
 **Routes from:**
 
@@ -76,7 +76,7 @@ The exception: the proposal's new Art. 4(8) and 5(11) refusal ground for substan
 Run the proposal-vs-current-law analysis for each affected provision the matter engages. The structure for each provision:
 
 - **Current law (operative).** What the regulation says today, quoted from `sources/regulation-2023-2854.md`. The provision text governs the matter.
-- **Proposed amendment (forward-looking).** What the Commission proposes to change. The proposal text is in COM(2025) 833 final; the tracker file (`sources/digital-omnibus-amendments-tracker.md`) summarises the principal proposed changes by provision.
+- **Proposed amendment (forward-looking).** What the Commission proposes to change. The proposal text is in COM(2025) 837 final; the tracker file (`sources/digital-omnibus-amendments-tracker.md`) summarises the principal proposed changes by provision.
 - **Status as of matter date.** Co-legislator negotiation; not adopted; expected adoption window (the tracker file gives mid-to-late 2026 at earliest as of the skill source date).
 - **Material impact on the matter.** Whether the proposal, if adopted in current form, would change the answer; if so, how.
 - **Recommendation.** Whether to act now on current law only; or to act now on current law with a documented hedge for the proposal scenario; or to defer action pending adoption.
@@ -95,7 +95,7 @@ Run the proposal-vs-current-law analysis for each affected provision the matter 
 
 **Current law (operative).** Art. 15(1)(a) covers public emergency response where alternative means are infeasible; Art. 15(1)(b) covers non-emergency, non-personal-data-only, specific legal task, alternatives exhausted including market purchase. Art. 15(2) excludes Art. 15(1)(b) requests against microenterprises and small enterprises.
 
-**Proposed amendment.** The proposal would narrow the conditions under which public authorities can demand data from businesses in non-emergency situations. The proposed narrowing affects Art. 15(1)(b) principally; the operational text is in COM(2025) 833 final.
+**Proposed amendment.** The proposal would narrow the conditions under which public authorities can demand data from businesses in non-emergency situations. The proposed narrowing affects Art. 15(1)(b) principally; the operational text is in COM(2025) 837 final.
 
 **Material impact.** Public-sector bodies issuing Art. 15(1)(b) requests under the current text may find the scope reduced post-adoption. Data holders facing such requests today respond under current law; data holders building Art. 15 response capabilities should design for both current and proposed scope to avoid rebuild post-adoption.
 
@@ -199,7 +199,7 @@ This card does not produce a standalone deliverable. It produces a section that 
   consideration only.]
 
 ### Status as of [matter date]
-- Commission proposal: COM(2025) 833 final, presented 19 November
+- Commission proposal: COM(2025) 837 final, presented 19 November
   2025.
 - Legislative procedure: 2025/0379(COD).
 - Co-legislator status: [Council general approach status; EP
@@ -213,7 +213,7 @@ This card does not produce a standalone deliverable. It produces a section that 
 - `sources/digital-omnibus-amendments-tracker.md` for the
   consolidated affected-provision list.
 - The tracker is the navigation aid; the operative proposal text
-  is in COM(2025) 833 final on EUR-Lex.
+  is in COM(2025) 837 final on EUR-Lex.
 ```
 
 The section runs in every deliverable touching an affected provision. The section length scales with the number of provisions engaged. For a single-provision matter, the section is short (one synthesis block plus the status snapshot). For a multi-chapter gap analysis, the section is longer (one synthesis block per chapter).
@@ -242,10 +242,10 @@ When this card fires, quote from:
 
 - `sources/regulation-2023-2854.md` for each affected provision the matter engages. The current law is the operative answer.
 - `sources/digital-omnibus-amendments-tracker.md` for the consolidated affected-provision list and the legislative-status snapshot.
-- COM(2025) 833 final for the operative proposed text (the proposal document on EUR-Lex; the tracker does not reproduce the proposed text verbatim). Where the deliverable cites the proposed text, it cites COM(2025) 833 final, recital or article number.
+- COM(2025) 837 final for the operative proposed text (the proposal document on EUR-Lex; the tracker does not reproduce the proposed text verbatim). Where the deliverable cites the proposed text, it cites COM(2025) 837 final, recital or article number.
 - Council and European Parliament procedural pages for current legislative status (procedure 2025/0379(COD)). The tracker file's status snapshot dates as of the skill source date; the deliverable's status snapshot should be re-confirmed for high-stakes matters.
 
-Never paraphrase the proposed text from training data; quote from COM(2025) 833 final. Never present the proposal as if it were law.
+Never paraphrase the proposed text from training data; quote from COM(2025) 837 final. Never present the proposal as if it were law.
 
 ---
 

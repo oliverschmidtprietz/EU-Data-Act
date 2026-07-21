@@ -109,7 +109,7 @@ Checks heading taxonomy (every expected recital, article, and FAQ question), poi
 |----------|-----------|
 | EU Data Act | Regulation (EU) 2023/2854 |
 | Commission FAQ on the Data Act | v1.4 (22 January 2026), CC BY 4.0 |
-| Digital Omnibus proposal | COM(2025) 833 final, 19 November 2025 (co-legislator negotiation, not adopted) |
+| Digital Omnibus proposal | COM(2025) 837 final, 19 November 2025 (co-legislator negotiation, not adopted) |
 | Trade Secrets Directive | Directive (EU) 2016/943 |
 | GDPR | Regulation (EU) 2016/679 |
 | ePrivacy Directive | Directive 2002/58/EC |

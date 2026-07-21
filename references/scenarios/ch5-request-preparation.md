@@ -130,7 +130,7 @@ The European Central Bank and Union bodies must additionally inform the Commissi
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Articles 14, 15, 16, 17, 18, 19, 20, 21, and 22 of Regulation (EU) 2023/2854 (Data Act) govern. The two-limb Art. 15(1) test, the Art. 17 procedural conditions, and the Art. 19 use limits are operative as drafted. Verbatim text at `sources/regulation-2023-2854.md` Arts. 14-22; operative recitals at Recitals 63-72.
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final (19 November 2025) would narrow the conditions under which public authorities can demand data from businesses in non-emergency situations. Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md` Chapter V entry.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final (19 November 2025) would narrow the conditions under which public authorities can demand data from businesses in non-emergency situations. Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md` Chapter V entry.
 
 The output cites current law as operative. The proposed amendment is forward-looking awareness only, relevant where a non-emergency limb (b) request is borderline today and would likely fail under the proposed narrowing.
 

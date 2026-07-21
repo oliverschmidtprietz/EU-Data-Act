@@ -109,7 +109,7 @@ Where the data is held by another entity within the data holder's group, the dat
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Articles 14-22 of Regulation (EU) 2023/2854 (Data Act) govern. Art. 18(2) decline-or-modify on closed grounds; Art. 18(4) anonymisation/pseudonymisation; Art. 19(3) trade-secret regime; Art. 20 compensation; Art. 21 onward sharing. Verbatim text at `sources/regulation-2023-2854.md` Arts. 14-22; operative recitals at Recitals 63-72.
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final (19 November 2025) would narrow the conditions under which public authorities can demand data from businesses in non-emergency situations under Art. 15(1)(b). Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md` Chapter V entry.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final (19 November 2025) would narrow the conditions under which public authorities can demand data from businesses in non-emergency situations under Art. 15(1)(b). Status: co-legislator negotiation, not adopted. See `sources/digital-omnibus-amendments-tracker.md` Chapter V entry.
 
 The output cites current law as operative. Where a decline turns on a borderline Art. 15(1)(b) condition that the proposal would narrow, the decline letter may note the proposal as additional context without relying on it as law.
 

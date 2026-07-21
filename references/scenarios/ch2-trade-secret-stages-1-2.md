@@ -102,7 +102,7 @@ The article's language is "withhold or, as the case may be, suspend the sharing 
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 4(6) and Art. 4(7) of Regulation (EU) 2023/2854 (Data Act) govern. Verbatim text at `sources/regulation-2023-2854.md` Art. 4(6) and Art. 4(7); operative recital at Recital 31.
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final does not propose substantive amendments to Art. 4(6) or Art. 4(7). The proposed new ground at Art. 4(8) (third-country trade-secret misuse risk) is downstream and does not change the stage-1 or stage-2 mechanics. See `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final does not propose substantive amendments to Art. 4(6) or Art. 4(7). The proposed new ground at Art. 4(8) (third-country trade-secret misuse risk) is downstream and does not change the stage-1 or stage-2 mechanics. See `sources/digital-omnibus-amendments-tracker.md`.
 
 ---
 

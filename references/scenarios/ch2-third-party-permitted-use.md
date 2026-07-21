@@ -114,7 +114,7 @@ Art. 6(2) closed list. Each item independent; the third party must clear all eig
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 6 of Regulation (EU) 2023/2854 (Data Act) governs. Verbatim text at `sources/regulation-2023-2854.md` Art. 6(1)-(2); operative recitals at Recitals 32 (competing-product framing; reverse engineering carve-out) and 33 (third-party scope).
-- **Proposed amendment under the Digital Omnibus.** COM(2025) 833 final does not propose substantive amendments to Art. 6. See `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under the Digital Omnibus.** COM(2025) 837 final does not propose substantive amendments to Art. 6. See `sources/digital-omnibus-amendments-tracker.md`.
 
 ---
 

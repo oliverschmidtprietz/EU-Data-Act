@@ -102,7 +102,7 @@ Art. 8(1) decomposes into four substantive duties plus the Chapter IV cross-refe
 ### Step 7: Synthesis with current-law-vs-proposal
 
 - **Current law.** Art. 8 and Art. 9 of Regulation (EU) 2023/2854 (Data Act) govern, with Art. 10 dispute settlement available. Verbatim text at `sources/regulation-2023-2854.md` Art. 8 (lines 778-798) and Art. 9 (lines 800-825); operative recitals at Recitals 42-51.
-- **Proposed amendment under Digital Omnibus.** COM(2025) 833 final (19 November 2025) does not materially alter Art. 8 or Art. 9 in respect of the FRAND framework itself. The Commission has signalled the forthcoming Art. 9(5) guidelines on calculating reasonable compensation (FAQ Q72: expected Q2/Q3 2026, not adopted as of May 2026). See `references/gotchas.md` entry 16 and `sources/digital-omnibus-amendments-tracker.md`.
+- **Proposed amendment under Digital Omnibus.** COM(2025) 837 final (19 November 2025) does not materially alter Art. 8 or Art. 9 in respect of the FRAND framework itself. The Commission has signalled the forthcoming Art. 9(5) guidelines on calculating reasonable compensation (FAQ Q72: expected Q2/Q3 2026, not adopted as of May 2026). See `references/gotchas.md` entry 16 and `sources/digital-omnibus-amendments-tracker.md`.
 
 The output cites current law as operative. The forthcoming Art. 9(5) guidelines are flagged but not relied on.
 
